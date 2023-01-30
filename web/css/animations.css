@@ -1,0 +1,42 @@
+.go {
+    animation: ani 1.5s forwards;
+}
+
+.back {
+    animation: ani_back 1.5s forwards;
+}
+
+@keyframes ani {
+    0% {
+        left: -600px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes ani_back {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -600px;
+    }
+}
+
+section {
+    transform: translate(0px, 30%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+section._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+#go-up.go-up-visible {
+    transform: translate(0px, 0px);
+}
